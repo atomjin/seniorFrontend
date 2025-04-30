@@ -1,6 +1,3 @@
-const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
-const API_BASE_URL = process.env.REACT_APP_API_URL;
-const WEBSOCKET_URL = process.env.REACT_APP_WEBSOCKET_URL;
+const API_BASE_URL = "https://streamlabs.com/api/v2.0/authorize?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=donations.read+donations.create"; // Change this if your backend is running on another port
 
-export { CLIENT_ID, REDIRECT_URI, API_BASE_URL, WEBSOCKET_URL };
+export default API_BASE_URL;
