@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import API_BASE_URL from "./config";
 
+import {
+  CLIENT_ID,
+  REDIRECT_URI,
+  API_BASE_URL,
+  WEBSOCKET_URL,
+} from "./config";
+
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [socketToken, setSocketToken] = useState(null);
