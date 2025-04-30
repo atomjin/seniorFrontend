@@ -53,10 +53,8 @@ function App() {
       )}
 
 <a href={`https://streamlabs.com/api/v2.0/authorize?response_type=code&client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=donations.read+donations.create`}>
-        <button style={{ padding: "10px", margin: "10px", background: "green", color: "white" }}>
-          Login with Streamlabs
-        </button>
-      </a>
+  <button>Login with Streamlabs</button>
+</a>
 
       <button
         onClick={fetchSocketToken}
