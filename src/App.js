@@ -52,7 +52,7 @@ function App() {
         <p style={{ color: "red" }}>❌ You are NOT logged in. Please log in.</p>
       )}
 
-<a href={`https://streamlabs.com/api/v2.0/authorize?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=donations.read+donations.create`}>
+<a href={`https://streamlabs.com/api/v2.0/authorize?response_type=code&client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=donations.read+donations.create`}>
         <button style={{ padding: "10px", margin: "10px", background: "green", color: "white" }}>
           Login with Streamlabs
         </button>
