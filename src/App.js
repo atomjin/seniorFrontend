@@ -6,8 +6,8 @@ function App() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    let ast = params.get("accessToken");
-    if (ast) accessToken = params.get("accessToken");
+    let ast = params.get("access_token");
+    if (ast) accessToken = params.get("access_token");
   }, []);
 
   const copyToClipboard = () => {
