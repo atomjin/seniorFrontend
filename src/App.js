@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import API_BASE_URL from "./config";
 
 function App() {
-  const [accessToken] = useState(null)
+  let [accessToken] = useState(null)
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
