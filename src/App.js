@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import API_BASE_URL from "./config";
 
 function App() {
-  let [accessToken] = useState(null)
+  const [accessToken, setAccessToken] = useState(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     let ast = params.get("access_token");
-    if (ast) accessToken = params.get("access_token");
+    if (ast) setAccessToken(ast);
   }, []);
 
   const copyToClipboard = () => {
